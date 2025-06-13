@@ -1,0 +1,200 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+    margin: 0;
+    background: white;
+    font-family: 'Oswald';
+    font-weight: 250;
+    text-align: center;
+    color: darkblue;
+    padding-top: 70px;
+}
+
+/* Header settings */
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(173, 198, 230);
+    border-bottom: 3px solid rgb(153, 174, 210);
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 17px;
+    box-sizing: border-box;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav {
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+nav ul li {
+    margin: 0;
+    padding-right: 20px;
+}
+
+header h1 {
+    color: darkblue;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/* Main page settings */
+
+b {
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 30px;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 30px;
+}
+
+h3 {
+    font-weight: 200;
+}
+
+h4 {
+    font-weight: 200;
+}
+
+#Home p {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    max-width: 800px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#What_We_Do {
+    color: white;
+    background-color: rgb(95, 128, 224);
+    border-top: 3px solid darkblue;
+    border-bottom: 3px solid darkblue;
+    padding: 20px;
+    padding-top: 5px;
+}
+
+.contact_card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkblue;
+    border-top: 3px solid black;
+    color: white;
+}
+
+.contact_name img {
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.contact_info a {
+    color: white;
+}
+
+/* Prevent browsers from altering phone # text */
+
+a[href^="tel"] {
+  color: white;
+  text-decoration: none;
+}
+
+/* Glide settings */
+
+.glide {
+    max-width: 900px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.glide__track,
+.glide__slides,
+.glide__slide {
+    height: 100%;
+}
+
+.glide__track {
+    border: 3px solid darkblue;
+    border-radius: 10px;
+}
+
+.glide__slide {
+    position: relative;
+}
+
+.glide__slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.glide__slide p {
+    font-size: 25px;
+}
+
+.glide__slide p {
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    bottom: 0;
+}
+
+.glide__arrows {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.glide__arrow {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  font-size: 2rem;
+  padding: 0.25rem 1rem 0.5rem 1rem;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+}
+
+.glide__arrow:hover {
+  color: #007bff;
+}
